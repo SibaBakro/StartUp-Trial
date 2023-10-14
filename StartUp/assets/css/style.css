@@ -1,0 +1,18 @@
+.btn-p{
+    background-color: brown !important;
+}
+
+@media (min-width: 992px ) {
+    .btn-p{
+        background-color: blue !important;
+    }
+    .col-lg-1{
+        width: 8.33%;
+    }
+    .col-lg-2{
+        width: 16.666%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+}

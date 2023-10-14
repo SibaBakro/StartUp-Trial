@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <style>
+        .carousel-item{
+            height: 748px;
+            background: gray;
+            background-position: center;
+            background-size: cover;
+            filter:contrast(.7) brightness(.7);
+        }
+        .container{
+            padding-top:250px;
+
+        }
+        .container>p{
+            text-align: center;
+            color: aliceblue;
+            font: bold;
+        }
+        .container>h1{
+            text-align: center;
+            color: white;
+            font: bold;
+        }
+
+        .h3-style{
+            display:flex ;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 150px;
+        }
+        .cardstyle{
+            display:flex ;
+            justify-content: center;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .card{
+            filter: drop-shadow(30px 10px 4px gray);
+
+        }
+
+    </style>
+    <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid" >
+        <a class="navbar-brand mb-0 h1" href="#">StartUp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" style="border-color: white; color: aliceblue;">Search</button >
+            </form>
+        </div>
+        </div>
+    </nav>
+    <main id="Mycarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image:url('assets/imgs/carousel4.jpg') ;"  >
+                <div >
+                </div>
+                <div class="container">
+                    <p>Creative and innovative<p>
+                    <h1>Creative & Innovative</h1>
+                    <h1>Digital Solution</h1>
+                    <div class="position-absolute top-90 start-50 translate-middle" style="Margin-top: 30px;">
+                    <a href="#" class="btn btnlg btn-primary"> sign up</a>
+                    <a href="#" class="btn btnlg btn-secondary"> Log in</a>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(assets/imgs/carousel3.jpg);">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#Mycarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Mycarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+        <div class="p-3 mb-2 bg-dark text-white" >
+        <section style="height: 700px; ">
+            <div class="h3-style"> <h3>Professional Stuff Ready to Help Your Business</h3></div>
+            <section class="cardstyle" >
+            <div class="card" style="width: 18rem;" >
+                <img src="assets/imgs/man1.jpg" class="card-img-top" alt="#">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;" >
+                <img src="assets/imgs/man1.jpg" class="card-img-top" alt="#">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/imgs/man3.jpg" class="card-img-top" alt="#">
+                <div class="card-body" >
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </section>
+        </section>
+    </div>
+    </main>
+
+</body>
+</html>
